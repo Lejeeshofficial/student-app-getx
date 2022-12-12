@@ -24,10 +24,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Student management',
       debugShowCheckedModeBanner: false,
-      home: const ScreenSplash(),
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
+      home: const ScreenSplash(),
     );
   }
 }

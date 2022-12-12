@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:student_app/model/student_db.dart';
@@ -12,6 +13,13 @@ class StudentController extends GetxController {
     update();
 
     super.onReady();
+  }
+
+  //navigation
+  RxInt tabIndex = 0.obs;
+
+  void changeTabIndex(int index) {
+    tabIndex.value = index;
   }
 
   // String? pickedImage;

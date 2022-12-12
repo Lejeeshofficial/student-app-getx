@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:student_app/constants/size/sizedBox.dart';
 import 'package:student_app/constants/style/style.dart';
 import 'package:student_app/view/bottomNav/bottom_nav.dart';
+import 'package:student_app/view/bottomNav/bottom_nav1.dart';
 
 class ScreenSplash extends StatefulWidget {
   const ScreenSplash({super.key});
@@ -38,7 +39,7 @@ class _ScreenSplashState extends State<ScreenSplash> {
     // ignore: use_build_context_synchronously
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: ((context) => const BottomNav()),
+        builder: ((context) => BottomNav()),
       ),
     );
   }

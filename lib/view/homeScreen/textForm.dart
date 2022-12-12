@@ -8,6 +8,7 @@ import 'package:student_app/controller/student_controller.dart';
 import 'package:student_app/main.dart';
 import 'package:student_app/model/student_db.dart';
 import 'package:student_app/view/bottomNav/bottom_nav.dart';
+import 'package:student_app/view/bottomNav/bottom_nav1.dart';
 import 'package:student_app/view/homeScreen/widget/bottomSheet.dart';
 import 'package:student_app/view/homeScreen/widget/textFormWidget.dart';
 
@@ -162,7 +163,7 @@ class TextForm extends StatelessWidget {
         year: number,
       );
 
-      Get.offAll(() => const BottomNav());
+      Get.offAll(() => BottomNav());
       Get.snackbar('title', 'message',
           duration: Duration(seconds: 1),
           titleText: Center(
